@@ -905,7 +905,7 @@
 - **[WebArena](https://github.com/web-arena-x/webarena)** ![GitHub stars](https://img.shields.io/github/stars/web-arena-x/webarena?style=social) - Realistic web environment for building and evaluating autonomous agents. Self-hostable benchmark with 812 diverse web tasks across shopping, CMS, Reddit, GitLab, and more. ICLR 2024. MIT licensed.
 - **[PinchBench](https://github.com/pinchbench/skill)** ![GitHub stars](https://img.shields.io/github/stars/pinchbench/skill?style=social) - Benchmarking system for evaluating LLM models as OpenClaw coding agents. Built with Rust by the kilo.ai team. MIT licensed.
 - **[AlpacaEval](https://github.com/tatsu-lab/alpaca_eval)** ![GitHub stars](https://img.shields.io/github/stars/tatsu-lab/alpaca_eval?style=social) - Automatic evaluator for instruction-following language models. Human-validated, high-quality, cheap, and fast evaluation with 1,984+ stars. From Stanford's Tatsu Lab. Apache 2.0 licensed.
-- **[PromptBench](https://github.com/microsoftarchive/promptbench)** ![GitHub stars](https://img.shields.io/github/stars/microsoftarchive/promptbench?style=social) - Unified evaluation framework for large language models from Microsoft. Robustness evaluation on adversarial prompts with 2,800+ stars. MIT licensed.
+
 - **[BigCode Evaluation Harness](https://github.com/bigcode-project/bigcode-evaluation-harness)** ![GitHub stars](https://img.shields.io/github/stars/bigcode-project/bigcode-evaluation-harness?style=social) - Framework for evaluating autoregressive code generation language models. Comprehensive evaluation suite for code LLMs with 1,042+ stars. Apache 2.0 licensed.
 
 
