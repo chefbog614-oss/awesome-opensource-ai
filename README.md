@@ -388,6 +388,8 @@ Open-source artificial intelligence models, libraries, infrastructure, and devel
 
 - [Burr](https://github.com/apache/burr) - Apache incubating framework for building stateful AI applications (chatbots, agents, simulations). Monitor, trace, persist, and execute on your own infrastructure with built-in UI and pluggable memory. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/apache/burr?style=social)
 - [KaibanJS](https://github.com/kaiban-ai/KaibanJS) - JavaScript-native framework for building and managing multi-agent systems with a Kanban-inspired approach. Visual task board for AI agents with real-time collaboration features. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/kaiban-ai/KaibanJS?style=social)
+- [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) - Dev-first open-source autonomous AI agent framework. Enables developers to build, manage and run useful autonomous agents quickly and reliably. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=social)
+- [Jido](https://github.com/agentjido/jido) - Autonomous agent framework for Elixir. Built for distributed, autonomous behavior and dynamic workflows with actor-model concurrency. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/agentjido/jido?style=social)
 
 #### Multi-Agent Orchestration
 
@@ -439,6 +441,7 @@ Open-source artificial intelligence models, libraries, infrastructure, and devel
 - [Kilo Code](https://github.com/Kilo-Org/kilocode) - Open-source agentic coding assistant with IDE workflows, tool use, and support for local or OpenAI-compatible models. ![GitHub stars](https://img.shields.io/github/stars/Kilo-Org/kilocode?style=social)
 - [Open SWE](https://github.com/langchain-ai/open-swe) - Asynchronous coding agent from the LangChain ecosystem for background software engineering tasks. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/open-swe?style=social)
 - [Letta Code](https://github.com/letta-ai/letta-code) - Memory-first coding harness designed for long-lived agents that learn from experience. Persistent agents with portable memory across models (Claude, GPT, Gemini, GLM, Kimi). CLI and desktop app for macOS, Windows, and Linux. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/letta-ai/letta-code?style=social)
+- [gptme](https://github.com/gptme/gptme) - Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/gptme/gptme?style=social)
 
 #### Prompt Engineering & Structured Outputs
 
