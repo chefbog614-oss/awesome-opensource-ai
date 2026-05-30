@@ -248,6 +248,7 @@ Good entries should have a clear reason to exist. They should help people build,
 #### Multimodal Models (Vision + Language)
 
 - [OmniParser (Microsoft)](https://github.com/microsoft/OmniParser) - Pure vision-based GUI agent framework that parses screen elements for AI automation. V2 achieves state-of-the-art on Screen Spot Pro benchmark. Powers computer-use agents with any vision model. CC-BY-4.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/microsoft/OmniParser?style=social)
+- [Gemini 2.5 (Google)](https://deepmind.google/technologies/gemini/) - Frontier multimodal foundation model featuring industry-leading context windows (up to 2M+ tokens) and native reasoning across text, code, images, audio, and video.
 
 - [MMaDA (Gen-Verse)](https://github.com/Gen-Verse/MMaDA) - Open-sourced multimodal large diffusion language model with unified architecture for text, image generation and multimodal reasoning. MIT licensed, NeurIPS 2025. ![GitHub stars](https://img.shields.io/github/stars/Gen-Verse/MMaDA?style=social)
 - [Qwen3-VL (Alibaba)](https://github.com/QwenLM/Qwen3-VL) - Latest flagship VLM with native 256K context (expandable to 1M), visual agent capabilities, 3D grounding, and superior multimodal reasoning. Major leap over Qwen2.5-VL. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3-VL?style=social)
