@@ -207,6 +207,10 @@ def parse_entries(path: Path) -> tuple[list[ParsedEntry], list[Problem]]:
                 Problem("error", path.name, line_number, "entry description is empty")
             )
 
+        # Strip star badges from description if they appear at the end
+        for badge_match in BADGE_RE.finditer(description):
+            description = description.replace(badge_match.group(0), "").strip()
+
         entries.append(
             ParsedEntry(
                 file=path,
@@ -255,6 +259,30 @@ def validate_toc(path: Path) -> list[Problem]:
                     f"TOC anchor `#{anchor}` does not match any section anchor",
                 )
             )
+
+    # Check for TOC completeness (ensure all sections are in TOC)
+    toc_anchors = set()
+    found_headings = []
+    in_toc = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped == "## Contents":
+            in_toc = True
+            continue
+        if in_toc and (stripped.startswith("---") or stripped.startswith("## ")):
+            if stripped.startswith("## ") and stripped != "## Contents":
+                in_toc = False
+            elif stripped.startswith("---"):
+                in_toc = False
+        
+        if in_toc:
+            match = TOC_LINK_RE.match(stripped)
+            if match:
+                toc_anchors.add(match.group("anchor"))
+    
+    for anchor in headings:
+        if anchor not in toc_anchors and anchor != "contents" and anchor != "about-this-list":
+            problems.append(Problem("warning", path.name, 1, f"Heading `#{anchor}` is missing from Table of Contents"))
 
     return problems
 
@@ -431,7 +459,7 @@ def validate_remote_requirements(
         if is_archived:
             problems.append(
                 Problem(
-                    "warning",
+                    "error",
                     first_entry.file.name,
                     first_entry.line_number,
                     f"repo `{repo_name}` is archived",
@@ -440,7 +468,7 @@ def validate_remote_requirements(
         if is_disabled:
             problems.append(
                 Problem(
-                    "warning",
+                    "error",
                     first_entry.file.name,
                     first_entry.line_number,
                     f"repo `{repo_name}` is disabled",

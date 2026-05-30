@@ -1,0 +1,21 @@
+steps:
+  # Step 1: Run structural validation
+  - name: 'python:3.11-slim'
+    id: 'structural-validation'
+    entrypoint: 'python3'
+    args: ['tools/validate_awesome.py', '--skip-remote']
+
+  # Step 2: Run remote health checks (requires GITHUB_TOKEN in Secret Manager)
+  - name: 'python:3.11-slim'
+    id: 'remote-health-check'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        python3 tools/validate_awesome.py
+    secretEnv: ['GITHUB_TOKEN']
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_ID/secrets/GITHUB_TOKEN/versions/latest
+      env: 'GITHUB_TOKEN'
